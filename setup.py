@@ -2,9 +2,7 @@ from typing import Sequence
 from setuptools import setup, find_packages
 from setuptools.command.build_py import build_py as _build_py
 from setuptools.command.sdist import sdist as _sdist
-import fnmatch
-import os
-import sys
+import fnmatch, os, sys
 
 with open(os.path.join(os.path.dirname(__file__), "VERSION")) as v:
     VERSION = v.readline().strip()
